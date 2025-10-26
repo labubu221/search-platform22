@@ -5,7 +5,7 @@
 ## ⚡ Быстрый старт (один шаг!)
 
 ```bash
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 ```
 
