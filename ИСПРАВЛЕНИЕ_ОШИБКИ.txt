@@ -15,7 +15,7 @@
 
 Используйте простой скрипт запуска:
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./simple-start.sh
 
 Этот скрипт:
@@ -34,7 +34,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 
 Используйте скрипт автоматической очистки:
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 
 Этот скрипт:
