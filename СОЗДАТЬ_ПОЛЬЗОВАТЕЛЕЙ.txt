@@ -12,7 +12,7 @@
 Скопируйте и выполните ЭТИ 3 КОМАНДЫ ПООЧЕРЕДНО в терминале:
 
 
-1️⃣  cd /home/sigmar/Downloads/people-search-platform22/backend
+1️⃣  cd /home/"user"/Downloads/people-search-platform22/backend
 
 2️⃣  export DATABASE_URL="sqlite:///./people_search.db"
 
@@ -31,7 +31,7 @@
 │ СПОСОБ 2: ЧЕРЕЗ ГОТОВЫЙ СКРИПТ                                         │
 └─────────────────────────────────────────────────────────────────────────┘
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./run-create-users.sh
 
 
@@ -40,7 +40,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 └─────────────────────────────────────────────────────────────────────────┘
 
 1. Запустите приложение:
-   cd /home/sigmar/Downloads/people-search-platform22
+   cd /home/"user"/Downloads/people-search-platform22
    ./simple-start.sh
 
 2. Откройте http://localhost:3000
@@ -122,7 +122,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 
 После создания пользователей проверьте их наличие:
 
-cd /home/sigmar/Downloads/people-search-platform22/backend
+cd /home/"user"/Downloads/people-search-platform22/backend
 
 sqlite3 people_search.db "SELECT email, first_name, last_name, city FROM users INNER JOIN profiles ON users.id = profiles.user_id;"
 
@@ -135,7 +135,7 @@ sqlite3 people_search.db "SELECT email, first_name, last_name, city FROM users I
 ═══════════════════════════════════════════════════════════════════════════
 
 1. ЗАПУСТИТЕ ПРИЛОЖЕНИЕ:
-   cd /home/sigmar/Downloads/people-search-platform22
+   cd /home/"user"/Downloads/people-search-platform22
    ./simple-start.sh
 
 2. ОТКРОЙТЕ В БРАУЗЕРЕ:
@@ -172,7 +172,7 @@ sqlite3 people_search.db "SELECT email, first_name, last_name, city FROM users I
 ПРОБЛЕМА: "ModuleNotFoundError: No module named 'app'"
 
 РЕШЕНИЕ:
-cd /home/sigmar/Downloads/people-search-platform22/backend
+cd /home/"user"/Downloads/people-search-platform22/backend
 pip3 install -r requirements.txt
 python3 create_10_test_users.py
 
