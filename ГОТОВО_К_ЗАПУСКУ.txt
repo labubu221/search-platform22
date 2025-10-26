@@ -13,7 +13,7 @@
 
 СКОПИРУЙТЕ И ВЫПОЛНИТЕ:
 
-cd /home/sigmar/Downloads/people-search-platform22 && ./clean-and-start.sh
+cd /home/"user"/Downloads/people-search-platform22 && ./clean-and-start.sh
 
 
 ЭТО АВТОМАТИЧЕСКИ:
