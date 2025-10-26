@@ -7,7 +7,7 @@
 │ СПОСОБ 1: БЕЗ DOCKER (САМЫЙ ПРОСТОЙ) ⭐ РЕКОМЕНДУЕТСЯ             │
 └─────────────────────────────────────────────────────────────────────┘
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./simple-start.sh
 
 ✅ Запустит всё автоматически
@@ -21,7 +21,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 │ СПОСОБ 2: С DOCKER ⭐ АВТОМАТИЧЕСКИ СОЗДАЕТ ПОЛЬЗОВАТЕЛЕЙ          │
 └─────────────────────────────────────────────────────────────────────┘
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 
 ✅ Очистит порты автоматически
