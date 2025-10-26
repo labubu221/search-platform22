@@ -60,7 +60,7 @@
 │ СКОПИРУЙТЕ И ВЫПОЛНИТЕ В ТЕРМИНАЛЕ:                                    │
 └─────────────────────────────────────────────────────────────────────────┘
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 
 
@@ -103,7 +103,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 
 КОМАНДА ЗАПУСКА:
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 
 ИЛИ ВРУЧНУЮ:
@@ -160,7 +160,7 @@ docker-compose up --build
 
 КОМАНДА ЗАПУСКА:
 
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./simple-start.sh
 
 ЧТО ПРОИСХОДИТ:
@@ -176,7 +176,7 @@ cd /home/sigmar/Downloads/people-search-platform22
 СОЗДАНИЕ ТЕСТОВЫХ ПОЛЬЗОВАТЕЛЕЙ:
 После запуска, в отдельном терминале:
 
-cd /home/sigmar/Downloads/people-search-platform22/backend
+cd /home/"user"/Downloads/people-search-platform22/backend
 export DATABASE_URL="sqlite:///./people_search.db"
 python3 create_10_test_users.py
 
@@ -189,7 +189,7 @@ python3 create_10_test_users.py
 
 ТЕРМИНАЛ 1 - BACKEND:
 
-cd /home/sigmar/Downloads/people-search-platform22/backend
+cd /home/"user"/Downloads/people-search-platform22/backend
 export DATABASE_URL="sqlite:///./people_search.db"
 pip3 install -r requirements.txt
 python3 init_db.py  # Создание таблиц
@@ -198,7 +198,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload
 
 ТЕРМИНАЛ 2 - FRONTEND:
 
-cd /home/sigmar/Downloads/people-search-platform22/frontend
+cd /home/"user"/Downloads/people-search-platform22/frontend
 npm install
 REACT_APP_API_URL=http://localhost:8001 npm start
 
@@ -1110,7 +1110,7 @@ curl http://localhost:8000/api/interests  # Проверка API endpoint
 ✅ Troubleshooting guide
 
 БЫСТРЫЙ СТАРТ:
-cd /home/sigmar/Downloads/people-search-platform22
+cd /home/"user"/Downloads/people-search-platform22
 ./clean-and-start.sh
 
 Затем откройте: http://localhost
