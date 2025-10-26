@@ -1,0 +1,136 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  height: 70px;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a8f6f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #0f4c3a;
+}
+
+.navbar-icon {
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-link {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #666;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #1a8f6f;
+  background: rgba(26, 143, 111, 0.1);
+}
+
+.navbar-link.active {
+  color: #1a8f6f;
+  background: rgba(26, 143, 111, 0.1);
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: #1a8f6f;
+  border-radius: 1px;
+}
+
+.navbar-link-icon {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-user-email {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 12px;
+  }
+  
+  .navbar-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .navbar-link-icon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .navbar-user-email {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-nav {
+    gap: 8px;
+  }
+  
+  .navbar-link {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  
+  .navbar-link span {
+    display: none;
+  }
+  
+  .navbar-link-icon {
+    margin-right: 0;
+  }
+}
