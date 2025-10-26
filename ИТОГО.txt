@@ -44,13 +44,13 @@
 
 1️⃣ ЗАПУСТИТЕ ПРИЛОЖЕНИЕ:
 
-   cd /home/sigmar/Downloads/people-search-platform22
+   cd /home/"user"/Downloads/people-search-platform22
    docker-compose up --build
 
 2️⃣ СОЗДАЙТЕ ТЕСТОВЫХ ПОЛЬЗОВАТЕЛЕЙ:
 
    Откройте новый терминал:
-   cd /home/sigmar/Downloads/people-search-platform22/backend
+   cd /home/"user"/Downloads/people-search-platform22/backend
    docker-compose exec backend python3 create_10_test_users.py
 
    ИЛИ если без Docker:
